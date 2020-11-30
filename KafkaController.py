@@ -18,9 +18,9 @@ class KafkaController:
             "this is third message",
             "this is fourth message",
         ]
-        self._producer.publish(eventList[0:1])
-        #self._producer.publish(eventList[0:2])
-        #self._producer.publish(eventList[2:])
+        #self._producer.publish(eventList[0:1])
+        self._producer.publish(eventList[0:2])
+        self._producer.publish(eventList[2:])
         return eventList
 
 
